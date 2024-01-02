@@ -14,7 +14,7 @@
 - flutter build 특정플랫폼명령어
 
 5. 플러터 최신버전 업그레이드 명령어
-- flutter upgrade 
+- flutter upgrade
 
 6. 플러터 의존성 팩키지 설치 명령어
 - flutter pub get (전체설치)
