@@ -5,8 +5,9 @@
 // -> stf 축약어
 import 'package:flutter/material.dart';
 
+// 탭메뉴 구현 메인 클래스 ////////////
 class ProfileTab extends StatefulWidget {
-  const ProfileTab({super.key});
+  const ProfileTab({Key?key}):super(key: key);
 
   @override
   State<ProfileTab> createState() => _ProfileTabState();
