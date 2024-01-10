@@ -107,7 +107,7 @@ class _ProfileTabState extends State<ProfileTab>
           itemCount: 42,
           // 실제 아이템을 빌드하는 속성(중요!!!)
           // 함수형으로 값을 셋팅함
-          // 함수 전달변수는 context는 셋팅된 모든 인스턴스정보
+          // 함수 전달변수는 context는 셋팅된 모든 인트턴스정보
           // index 는 아이템을 돌면서 카운트되는 순번(0부터!)
           itemBuilder: (context, index) {
             // debugPrint('순번:$index/컨텍스트:$context');
@@ -119,9 +119,9 @@ class _ProfileTabState extends State<ProfileTab>
             // https://picsum.photos/id/237/200/300
             // https://picsum.photos/id/이미지번호/가로크기/세로크기
             // -> 이미지 번호는 1번부터 시작함!(index를 활용하여변경)
-            return Image.asset('avatar.png');
-            // return Image.network(
-            //     "https://picsum.photos/id/${index + 1}/200/200");
+            return Image.network(
+                "https://picsum.photos/id/${index + 1}/200/200");
+            // return Image.asset('avatar.png');
           },
         ),
         GridView.builder(
