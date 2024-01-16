@@ -21,10 +21,10 @@ class MyApp extends StatelessWidget {
       home: CartPage(),
     );
   }
-} ////////// MyApp 클래스 ///////////
+} ////////// MyApp 클래스 ////////
 
-/// 페이지를 구성하는 클래스 ////////
-/// CartPage 클래스 //////
+/// 페이지를 구성하는 클래스 //////
+/// CartPage 클래스 /////
 class CartPage extends StatelessWidget {
   const CartPage({super.key});
 
@@ -41,12 +41,12 @@ class CartPage extends StatelessWidget {
       // body: Column(
       body: ListView(
         children: [
-          // 카트 페이지 상세구성 클래스
+          // 카트 페이지 상세구성 클래스 호출
           CartDetail(),
         ],
       ),
     );
-  } ///// build 메서드 /////
+  } /////// build 메서드 /////
 
   // 앱바를 구성하는 메서드 : _buildCartAppBar()
   AppBar _buildCartAppBar() {
@@ -55,17 +55,17 @@ class CartPage extends StatelessWidget {
       /// 왼쪽이동 화살표 아이콘 넣기
       leading: IconButton(
         icon: Icon(Icons.arrow_back),
-        onPressed: () {},
-      ),
-      // 실제 기능을 넣는 곳 : actions
-      // 기본정렬 오른쪽 끝에서 부터나옴(카트모양 아이콘)
-      actions: [
-        IconButton(
-          icon: Icon(Icons.shopping_cart),
-          onPressed: (){},
+        onPressed: () {}, 
         ),
-        SizedBox(width: 16), /// 오른쪽 공간
-      ],
+        // 실제 기능을 넣는 곳 : actions
+        // 기본정렬 오른쪽 끝에서 부터나옴(카트모양 아이콘)
+        actions: [
+          IconButton(
+            icon: Icon(Icons.shopping_cart),
+            onPressed: (){}, 
+          ),
+          SizedBox(width: 16), /// 오른쪽 공간
+        ],
     );
-  } ////////// _buildCartAppBar 메서드 /////////
-} ////////////// CartPage 클래스 ////////////
+  } ///////// _buildCartAppBar 메서드 //////////
+} ////////// CartPage 클래스 /////////
